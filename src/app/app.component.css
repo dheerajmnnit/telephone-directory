@@ -1,0 +1,70 @@
+.left {
+    width : 25%;
+    float : left;
+    height: 450px;
+    overflow-y: overlay;
+}
+
+.right {
+    width: 50%;
+    float: left;
+    margin-left: 12.5%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: rgb(240, 134, 134);
+  color: black;
+}
+tr {
+  cursor: pointer;
+}
+input{
+  width: 24%;
+  margin-top: 1%;
+  height: 25px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 2%;
+  font-family: serif
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.5s;
+  width: 100%;
+  text-align: center
+}
+
+.container {
+  padding: 1px 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+@media only screen and (max-width: 600px) {
+  #searchContainer , input{
+    width: 100%;
+    margin-top: 3%;
+  }
+  .left {
+    width: 100%;
+  }
+  .right{
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 8%;
+  }
+}

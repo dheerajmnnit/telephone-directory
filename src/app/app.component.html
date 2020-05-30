@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="card">
+    <div class="container">
+      <h1><b>Telephone Directory</b></h1>
+    </div>
+  </div>
+
+  <div id="searchContainer">
+    <input type="text" [(ngModel)]="searchText" placeholder="Search By Name or Mobile" />
+  </div>
+  <br>
+  <div class="left">
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Mobile</th>
+      </tr>
+      <tr *ngFor="let person of contacts | search: searchText" (click)="personDetails(person)">
+        <td>{{person.name}}</td>
+        <td *ngIf="person.name==userName">{{user.mobile}}</td>
+        <td *ngIf="!(person.name==userName)">{{person.mobile}}</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="right">
+    <app-person [personData]=personData></app-person>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="container">
+        <table>
+            <caption>
+                <h2>{{personData.name}}'s Details</h2>
+            </caption>
+            <tr>
+                <th>Name</th>
+                <td>{{personData.name}}</td>
+            </tr>
+            <tr>
+                <th>Mobile</th>
+                <td> 
+                    <input type="text" [(ngModel)]="personData.mobile" [disabled]="!isEditable"/>
+                    <button (click)="editData()" *ngIf="!isEditable" style="float: right;">Edit Mobile</button>
+                    <button *ngIf="isEditable" (click)="saveData(personData)" style="float: right;">Save Mobile</button>
+                </td>
+            </tr>
+            <tr>
+                <th>Age</th>
+                <td>{{personData.age}}</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>{{personData.address}}</td>
+            </tr>
+        </table>
+    </div>
+</div>
