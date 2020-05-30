@@ -6,6 +6,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
+Working demo deployed on netlify: https://peaceful-khorana-d520de.netlify.app/
+
 ## Features implemented:
 
 1. Implement a class Person with parameters name (str), mobile (int), age (number), and address (string) with suitable other parameters & getters and setters.
