@@ -6,8 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Problem Statement:
-# To design a Telephone Directory application with following features:
+## Features implemented:
 
 1. Implement a class Person with parameters name (str), mobile (int), age (number), and address (string) with suitable other parameters & getters and setters.
 2. Create 20 objects of Person and render the list using *ngFor, printing name and mobile number only and sorted alphabetically by name in the left quarter of screen.
